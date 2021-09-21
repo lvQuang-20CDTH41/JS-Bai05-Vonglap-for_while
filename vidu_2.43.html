@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ 2.43</title>
+</head>
+
+<body>
+    <script>
+        var a = b = 0;
+        labelCancelLoops: while (true) {
+            console.log('Outer loops: ' + a);
+            a += 1;
+            b = 1;
+            while (true) {
+                console.log('Inner loops: ' + b);
+                b += 1;
+                if (a === 10 && b === 10) {
+                    break labelCancelLoops;
+                } else if (b === 10) {
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ 2.44</title>
+</head>
+
+<body>
+    <script>
+        var i = n = 0;
+        while (i < 5) {
+            i++;
+            if (i == 3) {
+                continue; // bỏ qua bước này
+            }
+            n += i;
+            console.log(n);
+        }
+
+        console.log('');
+        var x = y = 0;
+        while (x < 5) {
+            x++;
+            if (x == 3) {
+                // continue;
+            }
+            y += x;
+            console.log(y);
+        }
+    </script>
+</body>
+
+</html>

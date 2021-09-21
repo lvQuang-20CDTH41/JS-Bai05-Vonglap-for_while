@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viết chương tình nhập vào một số tự nhiên n. Tính tổng
+        các số chia hết cho 3 bé hơn n</title>
+</head>
+
+<body>
+    <script>
+        var i = 1;
+        var s = 0;
+        var n = parseInt(prompt('Nhap n'));
+        while (i < n) {
+            if (i % 3 == 0) {
+                s += i;
+            }
+            i++;
+        }
+        document.write('tổng các số chia hết cho 3 bé hơn ' + n + " la " + s);
+    </script>
+</body>
+
+</html>
